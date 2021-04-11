@@ -6,7 +6,23 @@
     <title>@ViewBag.Title -Team of App-Factory web site</title>
     <!-- CSS only -->
     <!-- CSS only -->
+    <style>
+        #foo{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
 
+  text-align: center;
+         
+        }
+        #fot{
+background-color: black;
+padding:5px;
+ color: white;
+        }
+    </style>
 
     @Styles.Render("~/Content/css")
 
@@ -20,16 +36,16 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
-
+         
                 </button>
-
+             
             </div>
             <div class="navbar-collapse collapse">
-
+                
                 <ul class="nav navbar-nav">
 
                     <li>
-
+               
                         <img src="~/photo/group.png" class="img-circle" width="100" height="50" />
                     </li>
                     <li>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</li>
@@ -44,37 +60,50 @@
     <div class="container body-content">
         @RenderBody()
         <hr />
-        <div class="jumbotron">
-            <footer>
-                <div class="col-lg-3 col-md-6 footer-info">
+       
+        <footer id="foo">
+            <table >
+                <tr >
+                    <th style="width:100px"></th>
+                    <td style="width:100px"><a href=" https://localhost:44399/">Home</a></td>
+                    <th style="width:100px"></th>
+                    <td style="width:100px"><a href="https://localhost:44399/Home/About">About Us</a></td>
+                    <th style="width:100px"></th>
+                    <td style="width:100px"><a href="https://localhost:44399/Home/Contact">Contact Us</a></td>
+                    <th style="width:100px"></th>
+                    <td style="width:100px"><a href=" https://localhost:44399/Home/login">Login</a></td>
+                    <th style="width:100px"></th>
+                    <td style="width:100px"><a href=" ">News</a></td>
+                    <th style="width:100px"></th>
+                    <td style="width:100px"><a href=" ">Gallary</a></td>
+                    <th style="width:100px"></th>
+                    <td style="width:100px"><a href="https://localhost:44399/Home/login "> Info</a></td>
+
+                </tr>
+            </table>
+        
+
+                <div class="jumbotron" id="fot">
                     <div class="social-links mt-3">
-
-                        <a href="#" class="twitter"><i class="bx bxl-twitter">twitter</i></a>
-                        <a href="#" class="facebook"><i class="bx bxl-facebook">facebook</i></a>
-                        <a href="#" class="instagram"><i class="bx bxl-instagram">instagram</i></a>
-                        <a href="#" class="google-plus"><i class="bx bxl-skype">skype</i></a>
-                        <a href="#" class="linkedin"><i class="bx bxl-linkedin">linked</i></a>
-
-                    </div>
-                </div>
-
-                <div class="container">
-                    <div class="copyright">
-                        &copy; Copyright <strong>
-                            <span>
-                                appfactory student
-                                <script>document.write(new Date().getFullYear())</script>
-                            </span>
-                        </strong>. All Rights Reserved
+                        <u>
+                            <a href="#" class="twitter"><i class="bx bxl-twitter">twitter</i></a>
+                            <a href="#" class="facebook"><i class="bx bxl-facebook">facebook</i></a>
+                            <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                            <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                            <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                        </u>
                     </div>
 
-                </div>
-            </footer>
-        </div>
-    </div>
-       @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
-    @RenderSection("scripts", required: false)
 
+                    &copy; @DateTime.Now.Year - team of
+                    App-Factory
+                </div>
+        </footer>
+         </div>
+    
+
+        @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/bootstrap")
+        @RenderSection("scripts", required: false)
 </body>
 </html>
