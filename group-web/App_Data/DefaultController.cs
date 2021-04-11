@@ -13,4 +13,5 @@ namespace group_web.App_Data
         {
             return View();
         }
-    }}
+    }
+}

@@ -1,26 +1,106 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
+
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title -Team of App-Factory web site</title>
     <!-- CSS only -->
     <!-- CSS only -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
-        #foo{
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: black;
 
-  text-align: center;
-         
+
+
+
+
+
+
+
+        .fa {
+            padding: 20px;
+            text-align: center;
+            margin: 5px 2px;
+            font-size: 25px;
+            width: 25px;
         }
-        #fot{
-background-color: black;
-padding:5px;
- color: white;
+
+        .fa-facebook {
+            background:black;
+            color: white;
+        }
+
+        .fa-twitter {
+            background: black;
+            color: white;
+        }
+
+        .fa-pinterest {
+            background:black;
+            color: white;
+        }
+
+        .fa-linkedin {
+            background:black;
+            color: white;
+        }
+
+        .fa-instagram {
+            background: black;
+            color: white;
+        }
+
+        .fa-youtube {
+            background:black;
+            color: white;
+        }
+
+        .fa-google {
+            background:black;
+            color: white;
+        }
+
+        .fa-snapchat-ghost {
+            background:black;
+            color: white;
+            text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+        }
+
+        .fa-skype {
+            background:black;
+            color: white;
+        }
+
+        .fa:hover {
+            opacity: 0.9;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        #foo {
+            position:fixed;
+            left: 0;
+            bottom:0 ;
+            width: 100%;
+            background-color: black;
+            text-align: center;
+        }
+
+        #fot {
+            background-color: black;
+            padding: 5px;
+            color: white;
         }
     </style>
 
@@ -62,37 +142,47 @@ padding:5px;
         <hr />
        
         <footer id="foo">
-            <table >
-                <tr >
-                    <th style="width:100px"></th>
-                    <td style="width:100px"><a href=" https://localhost:44399/">Home</a></td>
-                    <th style="width:100px"></th>
-                    <td style="width:100px"><a href="https://localhost:44399/Home/About">About Us</a></td>
-                    <th style="width:100px"></th>
-                    <td style="width:100px"><a href="https://localhost:44399/Home/Contact">Contact Us</a></td>
-                    <th style="width:100px"></th>
-                    <td style="width:100px"><a href=" https://localhost:44399/Home/login">Login</a></td>
-                    <th style="width:100px"></th>
-                    <td style="width:100px"><a href=" ">News</a></td>
-                    <th style="width:100px"></th>
-                    <td style="width:100px"><a href=" ">Gallary</a></td>
-                    <th style="width:100px"></th>
-                    <td style="width:100px"><a href="https://localhost:44399/Home/login "> Info</a></td>
+            <center>
+                <table>
+                    <tr>
+                        <th style="width:100px">
+                        <td style="width:100px"> @Html.ActionLink("Home", "Index", "Home")</td>
 
-                </tr>
-            </table>
+                        <td style="width:100px">@Html.ActionLink("About", "About", "Home")</td>
+
+                        <td style="width:100px">@Html.ActionLink("Contact", "Contact", "Home")</a></td>
+
+                        <td style="width:100px"><a href=" ">News</a></td>
+
+                        <td style="width:100px"><a href=" ">Gallary</a></td>
+
+                        <td style="width:100px"><a href=""> Info</a></td>
+
+                    </tr>
+                    <tr>
+
+                        <td><a href="https://www.facebook.com/" target="_blank" class="fa fa-facebook"> </a> </td>
+
+
+                        <td> <a href="#" target="_blank" class="fa fa-twitter"> </a></td>
+
+
+                        <td> <a href="#" target="_blank" class="fa fa-pinterest"> </a></td>
+
+
+                        <td><a href="#" target="_blank" class="fa fa-linkedin"> </a></td>
+                        <td> <a href="#" class="fa fa-youtube"> </a></td>
+
+
+                        <td><a href="#" class="fa fa-snapchat-ghost"> </a></td>
+                        <td><a href="#"  target="_blank" class="fa fa-google"> </a></td>
+                    </tr>
+                </table>
+            </center>
         
 
                 <div class="jumbotron" id="fot">
-                    <div class="social-links mt-3">
-                        <u>
-                            <a href="#" class="twitter"><i class="bx bxl-twitter">twitter</i></a>
-                            <a href="#" class="facebook"><i class="bx bxl-facebook">facebook</i></a>
-                            <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-                            <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-                            <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-                        </u>
-                    </div>
+                   
 
 
                     &copy; @DateTime.Now.Year - team of
