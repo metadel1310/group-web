@@ -26,49 +26,49 @@
         }
 
         .fa-facebook {
-            background:black;
-            color: white;
+           
+            color: black;
         }
 
         .fa-twitter {
-            background: black;
-            color: white;
+          
+            color: black;
         }
 
         .fa-pinterest {
-            background:black;
-            color: white;
+            
+            color: black;
         }
 
         .fa-linkedin {
-            background:black;
-            color: white;
+          
+            color: black;
         }
 
         .fa-instagram {
-            background: black;
-            color: white;
+           
+            color: black;
         }
 
         .fa-youtube {
-            background:black;
-            color: white;
+           
+            color: black;
         }
 
         .fa-google {
-            background:black;
-            color: white;
+          
+            color: black;
         }
 
         .fa-snapchat-ghost {
-            background:black;
-            color: white;
+            
+            color: black;
             text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
         }
 
         .fa-skype {
-            background:black;
-            color: white;
+         
+            color: black;
         }
 
         .fa:hover {
@@ -89,12 +89,11 @@
 
 
         #foo {
-            position:fixed;
+          position:relative;
             left: 0;
-            bottom:-10px ;
+            bottom:-200px ;
             width: 100%;
-            background-color: black;
-            text-align: center;
+       
         }
 
        
@@ -137,49 +136,52 @@
         @RenderBody()
         <hr />
        
-        <footer id="foo">
-            <center>
-                <table>
-                    <tr>
-                        <th style="width:100px">
-                        <td style="width:100px"> @Html.ActionLink("Home", "Index", "Home")</td>
+        <footer id="foo" class="jumbotron">
+            
+                <center>
+                    <table>
+                        <tr>
 
-                        <td style="width:100px">@Html.ActionLink("About", "About", "Home")</td>
+                            <td style="width:100px"> @Html.ActionLink("Home", "Index", "Home")</td>
 
-                        <td style="width:100px">@Html.ActionLink("Contact", "Contact", "Home")</a></td>
+                            <td style="width:100px">@Html.ActionLink("About", "About", "Home")</td>
 
-                        <td style="width:100px"><a href=" ">News</a></td>
+                            <td style="width:100px">@Html.ActionLink("Contact", "Contact", "Home")</a></td>
 
-                        <td style="width:100px"><a href=" ">Gallary</a></td>
+                            <td style="width:100px"><a href=" ">News</a></td>
 
-                        <td style="width:100px"><a href=""> Info</a></td>
+                            <td style="width:100px"><a href=" ">Gallary</a></td>
 
-                    </tr>
-                    <tr>
+                            <td style="width:100px"><a href=""> Info</a></td>
 
-                        <td><a href="https://www.facebook.com/" target="_blank" class="fa fa-facebook"> </a> </td>
+                        </tr>
+                        <tr>
 
-
-                        <td> <a href="#" target="_blank" class="fa fa-twitter"> </a></td>
+                            <td><a href="https://www.facebook.com/" target="_blank" class="fa fa-facebook"> </a> </td>
 
 
-                        <td> <a href="#" target="_blank" class="fa fa-pinterest"> </a></td>
+                            <td> <a href="#" target="_blank" class="fa fa-twitter"> </a></td>
 
 
-                        <td><a href="#" target="_blank" class="fa fa-linkedin"> </a></td>
-                        <td> <a href="#" class="fa fa-youtube"> </a></td>
+                            <td> <a href="#" target="_blank" class="fa fa-pinterest"> </a></td>
 
 
-                        <td><a href="#" class="fa fa-snapchat-ghost"> </a></td>
-                        <td><a href="#" target="_blank" class="fa fa-google"> </a></td>
-                    </tr>
-                </table>
-            </center>
+                            <td><a href="#" target="_blank" class="fa fa-linkedin"> </a></td>
+                            <td> <a href="#" class="fa fa-youtube"> </a></td>
 
-            <h3><b><i>&copy; @DateTime.Now.Year - team of App-Factory</i></b></h3>
-           
-        </footer>
-         </div>
+
+                            <td><a href="#" class="fa fa-snapchat-ghost"> </a></td>
+
+                        </tr>
+                    </table>
+
+                </center>
+
+                <center><h3><b><i>&copy; @DateTime.Now.Year - team of App-Factory</i></b></h3></center>
+
+            </footer>
+      
+</div>
     
 
         @Scripts.Render("~/bundles/jquery")
