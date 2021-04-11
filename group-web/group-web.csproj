@@ -159,10 +159,12 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="photo\1l.gif" />
     <Content Include="photo\app-factory.jpg" />
     <Content Include="photo\group-teamwork.jpg" />
     <Content Include="photo\group.png" />
     <Content Include="photo\light.jpg" />
+    <Content Include="photo\login.gif" />
     <Content Include="photo\team-1.jpg" />
     <Content Include="photo\team.jfif" />
     <Content Include="photo\we can do.jfif" />

@@ -119,7 +119,7 @@ media screen and (max-width: 300px) {
 }
     </style>
 </head>
-<body>
+<body bgcolor="gray">
 
     
 
@@ -130,7 +130,7 @@ media screen and (max-width: 300px) {
         <form class="modal-content animate" action="" method="post">
             <div class="imgcontainer">
                 <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-                <img src="~/photo/app-factory.jpg" alt="Avatar" class="avatar">
+                <img src="~/photo/1l.gif" width="1000" height="50" class="img-circle" >
             </div>
 
             <div class="container">
@@ -154,6 +154,10 @@ media screen and (max-width: 300px) {
     </div>
 
     <script>
+        $uname = $_POST["uname"];
+        function isLetter(str) {
+  return str.length === 1 && str.match(/[a-z]/i);
+}
         // Get the modal
         var modal = document.getElementById('id01');
 

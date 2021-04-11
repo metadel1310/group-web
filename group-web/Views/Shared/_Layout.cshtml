@@ -91,17 +91,13 @@
         #foo {
             position:fixed;
             left: 0;
-            bottom:0 ;
+            bottom:-10px ;
             width: 100%;
             background-color: black;
             text-align: center;
         }
 
-        #fot {
-            background-color: black;
-            padding: 5px;
-            color: white;
-        }
+       
     </style>
 
     @Styles.Render("~/Content/css")
@@ -175,19 +171,13 @@
 
 
                         <td><a href="#" class="fa fa-snapchat-ghost"> </a></td>
-                        <td><a href="#"  target="_blank" class="fa fa-google"> </a></td>
+                        <td><a href="#" target="_blank" class="fa fa-google"> </a></td>
                     </tr>
                 </table>
             </center>
-        
 
-                <div class="jumbotron" id="fot">
-                   
-
-
-                    &copy; @DateTime.Now.Year - team of
-                    App-Factory
-                </div>
+            <h3><b><i>&copy; @DateTime.Now.Year - team of App-Factory</i></b></h3>
+           
         </footer>
          </div>
     
