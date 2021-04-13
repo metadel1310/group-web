@@ -8,6 +8,7 @@
     <!-- CSS only -->
     <!-- CSS only -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <style>
 
 
@@ -76,24 +77,10 @@
         }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-        #foo {
-          position:relative;
-            left: 0;
-            bottom:-200px ;
-            width: 100%;
+        #foo{
+         border:double red;
        
+  background-color:red;
         }
 
        
@@ -132,11 +119,13 @@
             </div>
         </div>
     </div>
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
+    <div class="glyphicon-fullscreen" style="border:double black">
+      
+      
        
-        <footer id="foo" class="jumbotron">
+        <footer>
+            @RenderBody()
+         
             
                 <center>
                     <table>
@@ -178,8 +167,8 @@
                 </center>
 
                 <center><h3><b><i>&copy; @DateTime.Now.Year - team of App-Factory</i></b></h3></center>
-
-            </footer>
+          
+        </footer>
       
 </div>
     
